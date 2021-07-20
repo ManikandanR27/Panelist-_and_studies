@@ -1,1 +1,361 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Panelist-primary: mat-palette($mat-indigo);
+$Panelist-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Panelist-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Panelist-theme: mat-light-theme((
+  color: (
+    primary: $Panelist-primary,
+    accent: $Panelist-accent,
+    warn: $Panelist-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Panelist-theme);
+
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Panelist-primary: mat-palette($mat-indigo);
+$Panelist-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Panelist-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Panelist-theme: mat-light-theme((
+  color: (
+    primary: $Panelist-primary,
+    accent: $Panelist-accent,
+    warn: $Panelist-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Panelist-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+/** Variables & Mixins **/
+
+@import "./assets/scss/utils/variables";
+@import "./assets/scss/utils/mixins";
+@import "./assets/scss/utils/functions";
+@import "./assets/scss/utils/colors";
+
+/** Base Rules **/
+@import "./assets/scss/base/normalize";
+@import "./assets/scss/base/fonts/fonts";
+@import "./assets/scss/base/icons/icons";
+@import "./assets/scss/base/typography";
+@import "./assets/scss/base/colors";
+
+/** Layout **/
+@import "./assets/scss/layout/grid";
+@import "./assets/scss/layout/spacing";
+@import "./assets/scss/layout/utility";
+@import "./assets/scss/layout/visibility";
+
+/** 3rd Party Vendors **/
+@import "./assets/scss/vendors/animate-css/animate";
+@import "./assets/scss/vendors/custom-scrollbar/jquery.mCustomScrollbar";
+@import "./assets/scss/vendors/prism/prism";
+
+/** Animations & Transitions **/
+@import "./assets/scss/utils/animations/fadein";
+@import "./assets/scss/utils/animations/pulse";
+@import "./assets/scss/utils/animations/scale";
+@import "./assets/scss/utils/animations/spin";
+@import "./assets/scss/utils/animations/pulse";
+@import "./assets/scss/utils/animations/waves";
+
+/** Components - Forms **/
+@import "./assets/scss/components/forms/form";
+@import "./assets/scss/components/forms/input"; // for legacy inputs
+@import "./assets/scss/components/forms/checkbox";
+@import "./assets/scss/components/forms/radio";
+@import "./assets/scss/components/forms/textarea"; // for legacy inputs
+@import "./assets/scss/components/forms/select";
+@import "./assets/scss/components/forms/file";
+
+/** Components - Media **/
+@import "./assets/scss/components/media/iframe";
+@import "./assets/scss/components/media/image";
+@import "./assets/scss/components/media/video";
+
+/** Components - Materialize **/
+@import "./assets/scss/components/materialize/badge";
+@import "./assets/scss/components/materialize/box";
+@import "./assets/scss/components/materialize/buttons";
+@import "./assets/scss/components/materialize/cards";
+@import "./assets/scss/components/materialize/chips";
+@import "./assets/scss/components/materialize/collection";
+@import "./assets/scss/components/materialize/lists";
+@import "./assets/scss/components/materialize/table";
+
+/** Components - Interactive & UI **/
+@import "./assets/scss/components/ui/autocomplete";
+@import "./assets/scss/components/ui/carousel";
+@import "./assets/scss/components/ui/collapsible";
+@import "./assets/scss/components/ui/dropdown";
+@import "./assets/scss/components/ui/modal";
+@import "./assets/scss/components/ui/notifications";
+@import "./assets/scss/components/ui/parallax";
+@import "./assets/scss/components/ui/progress";
+@import "./assets/scss/components/ui/range";
+@import "./assets/scss/components/ui/sticky";
+@import "./assets/scss/components/ui/switch";
+@import "./assets/scss/components/ui/tabs";
+@import "./assets/scss/components/ui/tap";
+@import "./assets/scss/components/ui/tooltip";
+@import "./assets/scss/components/ui/datepicker";
+@import "./assets/scss/components/ui/timepicker";
+
+/** Partials  **/
+@import "./assets/scss/partials/dashboard";
+@import "./assets/scss/partials/breadcrumbs";
+@import "./assets/scss/partials/header";
+@import "./assets/scss/partials/footer";
+@import "./assets/scss/partials/nav";
+@import "./assets/scss/partials/navlist";
+@import "./assets/scss/partials/pagination";
+@import "./assets/scss/partials/sidenav";
+
+
+/** Custom Themes **/
+@import "./assets/scss/themes/default";
+@import "./assets/scss/themes/light";
+@import "./assets/scss/themes/dark";
+
+
+// src\app\shared\components\sidenav\sidenav.component.scss
+
+.example-container {
+  background: #ffffff;
+  // height: calc(100vh - 64px);
+  .mat-sidenav {
+    padding: 8px;
+    min-width: 50px;      
+    border-right-style: groove;
+  }
+  .mat-sidenav-content {
+    // height: calc(100vh - 64px);
+  }
+}
+.menu-button {
+  text-transform: capitalize;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon-no-color {
+  color: rbga(0, 0, 0, 0.54);
+}
+.searchbar {
+    width: 80%;
+    display: inline-block;
+}
+.container-fluid .title {
+  margin: 0px;
+  font-weight: bold;
+}
+.rounded {
+border-radius: 50px;
+background-color: #EFF4FB;
+padding: 0px 16px !important;
+}
+.input-field > label {
+  color: #546E7A;
+}
+input[type=search]:not(.browser-default) {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0px;
+}
+.overlay-modal-search {
+    position: absolute;
+    top: 12px;
+    z-index: 999;
+    right: 0px;
+    background: #EFF4FB;
+}
+input:focus-within {
+    background:transparent !important;
+    border-bottom: none !important;
+}
+.margin {
+    margin: 1%;
+}
+
+.lh {
+  line-height: 2.5;
+}
+.lock {
+  padding: inherit;
+  margin-top: 5%;
+} 
+.lh1 {
+  line-height: 2.8;
+}
+.mat-tab-group {
+  font-family: "KantarBrownWeb-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+.mat-tab-label .mat-tab-label-content {
+  font-family: "KantarBrownWeb-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+mat-icon {
+  vertical-align: middle !important;
+}
+.mat-sort-header-content {
+  font-family: "KantarBrownWeb-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #07122F;
+  font-size: 16px;
+}
+.mat-cell  {
+  font-family: "KantarBrownWeb-Regular", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-green {
+
+  background: green;
+
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-yellow {
+
+  background: rgb(184, 214, 73);
+
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-pink {
+
+  background: rgb(156, 41, 131);
+
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-blue {
+
+  background: rgb(27, 101, 161);
+
+}
+.mat-tab-body-content {   
+
+  padding: 25px;
+
+  min-height: 100px;
+
+  color: #333;
+
+  background: #fff;
+
+}
+.m-t-15 {
+
+  margin-top: 15px;
+
+}
+.mdc-text-field {
+
+  width: 100%;
+
+}
+.mat-checkbox-background {
+
+  visibility: hidden;
+
+}
+.mat-checkbox .mat-checkbox-ripple {
+
+  position: relative !important;
+
+  top:auto !important;
+
+  left: auto !important;
+
+}
+.mat-checkbox-frame {
+  display: none !important;
+}
+
+//tab style
+.mat-focus-indicator mat-tab-label-active .mat-tab-label-content {
+
+  color: #303f9f;
+
+}
+
+
+
+.mat-tab-label-content:hover, .mat-tab-label-active .mat-tab-label-content {
+
+  color: #303f9f;
+
+}
+
+
+
+.mat-tab-label-content:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+
+  background-color: #303f9f;
+
+}
+
+.mat-chip.mat-standard-chip {
+  color: #ffffff;
+}
+
+.mat-drawer-content {
+  background: #eff4fb30;
+}
+
+.m-l-20 {
+margin-left: 20px;
+}

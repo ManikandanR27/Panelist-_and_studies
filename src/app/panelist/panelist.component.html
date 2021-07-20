@@ -1,0 +1,585 @@
+<div class="container-fluid margin">
+    <h3 class="title">PANELIST DETAILS</h3>
+    <!-- <div class="my-2 py-2">
+            <div class="">
+                <div class="searchbar position-relative">
+                    <input class="search_input" type="text" placeholder="search Id,Email">
+                    <a href="#" class="search_icon">
+
+                    </a>
+                </div>
+            </div>
+           </div> -->
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="rounded">
+                <div class="input-field">
+                    <input id="search" type="search" class="validate" placeholder="Search by Id,Email Address,Phone">
+                    <div class="overlay-modal-search">
+                        <a href="#advance_search" class="modal-trigger">
+                            <i class="material-icons right blue-grey-text text-darken-2">filter_list</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="col-md-12">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-content">
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Panelist ID</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">10111</div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Username</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">luke.chandley@kantar.com</div>
+
+
+
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">
+                        <span>First Name</span><br>
+                        <span>Last Name</span>
+                    </div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7 lock">
+                        <div class="col-md-3">
+                            <img src="https://img.icons8.com/ios/50/000000/horizontal-line.png" />
+                        </div>
+                        <div class="col-md-3 center">
+                            <img src="https://img.icons8.com/fluent-systems-filled/36/000000/lock.png" />
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://img.icons8.com/ios/50/000000/horizontal-line.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Phone No</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">+44(0) 7960 432 868</div>
+                </div>
+
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Panelist Status</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">Active</div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Role</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">Panelist</div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Locale</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7">
+                        China(Chinese)-zh_CN</div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Date of Registration</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7"><b>21/01/2028 12:01</b></div>
+                </div>
+                <div class="row lh">
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-5">Date of Last Activity</div>
+                    <!-- col-md-6 width: 50% -->
+                    <div class="col-md-7"><b>12/07/2021 15:32</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-7">
+        <div class="card">
+            <mat-tab-group (selectedTabChange)="onTabClick($event)">
+                <mat-tab label="Basic">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="HouseHold">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Health">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+                <mat-tab label="Transport">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Social Binding">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+
+                <mat-tab label="Perks">
+                    <div class="card-content">
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Panelist ID</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Email Address </div>
+                            <div class="col-md-4 text-right">luke@kantar.com</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">First Name</div>
+                            <div class="col-md-4 text-right">Luke</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Chandley</div>
+                            <div class="col-md-4 text-right">10111</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Phone</div>
+                            <div class="col-md-4 text-right">044-1011123</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">PS_Reason</div>
+                            <div class="col-md-4 text-right">Clearing</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+                        <div class="row lh1">
+                            <div class="col-md-1">
+                                <mat-icon>error_outline</mat-icon>
+                            </div>
+                            <div class="col-md-6">Status</div>
+                            <div class="col-md-4 text-right">True</div>
+                            <div class="col-md-1">
+                                <mat-icon>edit</mat-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </mat-tab>
+
+            </mat-tab-group>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 grey lighten-4">
+    <div class="col-md-5">
+        <span class="right icon m-l-20">
+            <mat-icon [inline]="true">edit</mat-icon>
+        </span>
+    </div>
+    <div class="col-md-7 text-right">
+        <span class="m-l-20"><a class="waves-effect waves-light btn outlined round" routerLink="studies">Studies</a></span>
+
+        <span class="m-l-20"><a class="waves-effect waves-light btn outlined round">Rewards</a></span>
+
+        <span class="m-l-20"><a class="waves-effect waves-light btn outlined round">Request OTP</a></span>
+    </div>
+</div>

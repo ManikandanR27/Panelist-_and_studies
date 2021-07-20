@@ -1,0 +1,65 @@
+.icon {
+    font-size: 18px;
+    mat-icon {
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        padding: 5px 8px;
+        margin: 3px;
+    }
+}
+.mat-focus-indicator mat-tab-label-active .mat-tab-label-content {
+
+    color: #303f9f;
+
+}
+.mat-tab-label-content:hover, .mat-tab-label-active .mat-tab-label-content {
+
+    color: #303f9f;
+
+}
+
+
+
+.mat-tab-label-content:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+
+    background-color: #303f9f;
+
+}
+.addTab {    
+
+    .mat-button-base {
+
+        position: absolute;
+        right: 0;
+        background: white;
+        color: #333;
+        font-size: 20px;
+        box-shadow: none;
+        margin-top: 7px;
+        z-index: 9999;
+        margin-right: 20px;
+                &:active {
+
+            box-shadow: none;
+
+        }
+
+    }
+
+}
+.p-0 {
+
+    padding: 0;
+
+}
+.btn + .btn {
+    margin-left: 20px !important;
+}

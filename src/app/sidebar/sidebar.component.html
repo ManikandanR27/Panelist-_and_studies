@@ -1,0 +1,21 @@
+
+<div>
+    <mat-sidenav-container class="example-container">
+   
+           <mat-sidenav #sidenav mode="side" opened>
+               <mat-nav-list>
+                   <a mat-list-item href="#">
+                       <img src="../../assets/images/kantar-icon.svg" width="30" height="30">                                            
+                   </a>
+                   <a mat-list-item href="#">
+                       <img src="https://img.icons8.com/ios-filled/30/000000/search--v4.png"/>
+                   </a>
+               </mat-nav-list>
+           </mat-sidenav>
+   
+           <mat-sidenav-content>
+               <router-outlet></router-outlet>
+            </mat-sidenav-content>
+
+        </mat-sidenav-container>
+    </div>
